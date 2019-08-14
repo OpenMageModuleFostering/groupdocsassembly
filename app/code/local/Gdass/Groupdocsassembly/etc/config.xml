@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gdass_Groupdocsassembly>
+            <version>0.1.0</version>
+        </Gdass_Groupdocsassembly>
+    </modules>
+    
+    <global>
+        
+    <blocks>
+         <adminhtml>
+            <rewrite>
+                <cms_page_edit>Gdass_Groupdocsassembly_Block_Adminhtml_Cms_Page_Edit</cms_page_edit>
+            </rewrite>
+        </adminhtml>
+    </blocks>
+
+        
+        <models>
+            <groupdocsassembly>
+                <class>Gdass_Groupdocsassembly_Model</class>
+                <resourceModel>groupdocsassembly_mysql4</resourceModel>
+            </groupdocsassembly>
+            <groupdocsassembly_mysql4>
+                <class>Gdass_Groupdocsassembly_Model_Mysql4</class>
+                <entities>
+                    <groupdocsassembly>
+                        <table>groupdocsass</table>
+                    </groupdocsassembly>
+                </entities>
+            </groupdocsassembly_mysql4>
+        </models>
+<resources>
+        <groupdocsassembly_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </groupdocsassembly_write>
+
+       <groupdocsassembly_read>
+          <connection>
+             <use>core_read</use>
+          </connection>
+       </groupdocsassembly_read>
+       
+       <groupdocsassembly_delete>
+          <connection>
+             <use>core_delete</use>
+          </connection>
+       </groupdocsassembly_delete>
+</resources>
+
+        
+        
+        
+        
+        <blocks>
+            <groupdocsviewer>
+                <class>Gdass_Groupdocsassembly_Block</class>
+            </groupdocsviewer>
+        </blocks>
+        <helpers>
+            <groupdocsviewer>
+                <class>Gdass_Groupdocsassembly_Helper</class>
+            </groupdocsviewer>  
+        </helpers>
+    </global>
+    
+    <admin>
+        <routers>
+            <groupdocsviewer>
+                <use>admin</use>
+                <args>
+                    <module>Gdass_Groupdocsassembly</module>
+                    <frontName>groupdocsviewer</frontName>
+                </args>
+            </groupdocsviewer>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        
+        <menu>
+            <catalog>
+                <children>
+                    <groupdocsviewer_adminform translate="title" module="groupdocsviewer">
+                        <title>Groupdocs Viewer</title>
+                        <action>groupdocsviewer/adminhtml_viewer</action>
+                    </groupdocsviewer_adminform>
+                </children>
+            </catalog>
+        </menu>
+        
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <catalog>
+                            <children>
+                                <groupdocsviewer_adminform>
+                                    <title>Groupdocs Viewer</title>
+                                </groupdocsviewer_adminform>
+                            </children>
+                        </catalog>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        
+        <layout>
+            <updates>
+                <groupdocsviewer>
+                    <file>groupdocsviewer.xml</file>
+                </groupdocsviewer>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

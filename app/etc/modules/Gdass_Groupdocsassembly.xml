@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gdass_Groupdocsassembly>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gdass_Groupdocsassembly>
+    </modules>
+</config>

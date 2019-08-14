@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/GroupDocsAssembly",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Collect data and create new documents online by embedding GroupDocs Assembly questionnaires into your site.",
+    "authors": [
+    {
+        "name": "Marketplace",
+        "email": "support@groupdocs.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
