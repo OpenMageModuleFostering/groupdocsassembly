@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
-    "description": "Collect data and create new documents online by embedding GroupDocs Assembly questionnaires into your site.",
+    "description": "Assembles documents by merging data entered by users on your site through forms with your document templates.",
     "authors": [
     {
-        "name": "Marketplace",
-        "email": "support@groupdocs.com"
+        "name": "GroupDocs",
+        "email": "marketplace@groupdocs.com"
     }
 ],
     "suggest": {

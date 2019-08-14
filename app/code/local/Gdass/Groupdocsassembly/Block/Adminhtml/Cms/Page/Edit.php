@@ -27,7 +27,7 @@
         // all good continue
         var cmsName = 'Magento'
         var cmsVersion = '1.7'
-        var iframe = '<iframe src="https://apps.groupdocs.com/assembly2/questionnaire-assembly/'+ans+'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="600" height="400"></iframe>';
+        var iframe = '<iframe src="https://apps.groupdocs.com/assembly2/questionnaire-assembly/'+ans+'?&referer='+cmsName+'-Assembly/'+cmsVersion+'" frameborder="0" width="600" height="400">If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browser such as Mozilla Firefox or Google Chrome. For more help, please check our documentation Wiki: http://groupdocs.com/docs/display/assembly/GroupDocs+Assembly+Integration+with+3rd+Party+Platforms</iframe>';
         var tinyMceContent = tinyMCE.activeEditor.getContent();
         // set content
         tinyMCE.activeEditor.setContent(tinyMceContent+iframe);
