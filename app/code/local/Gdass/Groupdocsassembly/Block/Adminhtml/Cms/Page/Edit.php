@@ -27,7 +27,7 @@
         // all good continue
         var cmsName = 'Magento'
         var cmsVersion = '1.7'
-        var iframe = '<iframe src="http://dev-apps.groupdocs.com/assembly2/questionnaire-assembly/'+ans+'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="600" height="400"></iframe>';
+        var iframe = '<iframe src="https://apps.groupdocs.com/assembly2/questionnaire-assembly/'+ans+'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="600" height="400"></iframe>';
         var tinyMceContent = tinyMCE.activeEditor.getContent();
         // set content
         tinyMCE.activeEditor.setContent(tinyMceContent+iframe);
