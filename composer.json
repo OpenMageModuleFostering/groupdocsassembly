@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/GroupDocsAssembly",
+    "name": "OpenMageModuleFostering\/GroupDocsAssembly",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Assembles documents by merging data entered by users on your site through forms with your document templates.",
     "authors": [
-    {
-        "name": "GroupDocs",
-        "email": "marketplace@groupdocs.com"
-    }
-],
+        {
+            "name": "GroupDocs",
+            "email": "marketplace@groupdocs.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
